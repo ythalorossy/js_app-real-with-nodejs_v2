@@ -1,0 +1,128 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\nodejs\\node.exe',
+1 verbose cli   'c:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose readDependencies using package.json deps
+5 verbose install where, deps [ 'c:\\nodejs\\app-real-with-nodejs\\ntalk',
+5 verbose install   [ 'express', 'ejs' ] ]
+6 info preinstall application-name@0.0.1
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'express@3.4.7', null ]
+9 verbose cache add name=undefined spec="express@3.4.7" args=["express@3.4.7",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'express@3.4.7',
+10 verbose parsed url   path: 'express@3.4.7',
+10 verbose parsed url   href: 'express@3.4.7' }
+11 verbose cache add [ 'ejs@*', null ]
+12 verbose cache add name=undefined spec="ejs@*" args=["ejs@*",null]
+13 verbose parsed url { protocol: null,
+13 verbose parsed url   slashes: null,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: null,
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: null,
+13 verbose parsed url   hash: null,
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: 'ejs@*',
+13 verbose parsed url   path: 'ejs@*',
+13 verbose parsed url   href: 'ejs@*' }
+14 verbose cache add name="express" spec="3.4.7" args=["express","3.4.7"]
+15 verbose parsed url { protocol: null,
+15 verbose parsed url   slashes: null,
+15 verbose parsed url   auth: null,
+15 verbose parsed url   host: null,
+15 verbose parsed url   port: null,
+15 verbose parsed url   hostname: null,
+15 verbose parsed url   hash: null,
+15 verbose parsed url   search: null,
+15 verbose parsed url   query: null,
+15 verbose parsed url   pathname: '3.4.7',
+15 verbose parsed url   path: '3.4.7',
+15 verbose parsed url   href: '3.4.7' }
+16 verbose addNamed [ 'express', '3.4.7' ]
+17 verbose addNamed [ '3.4.7', '3.4.7' ]
+18 verbose cache add name="ejs" spec="*" args=["ejs","*"]
+19 verbose parsed url { protocol: null,
+19 verbose parsed url   slashes: null,
+19 verbose parsed url   auth: null,
+19 verbose parsed url   host: null,
+19 verbose parsed url   port: null,
+19 verbose parsed url   hostname: null,
+19 verbose parsed url   hash: null,
+19 verbose parsed url   search: null,
+19 verbose parsed url   query: null,
+19 verbose parsed url   pathname: '*',
+19 verbose parsed url   path: '*',
+19 verbose parsed url   href: '*' }
+20 verbose addNamed [ 'ejs', '*' ]
+21 verbose addNamed [ null, '*' ]
+22 silly lockFile fb24baa2-express-3-4-7 express@3.4.7
+23 verbose lock express@3.4.7 C:\Users\YthaloRossy\AppData\Roaming\npm-cache\fb24baa2-express-3-4-7.lock
+24 silly lockFile 9d73ed50-ejs ejs@*
+25 verbose lock ejs@* C:\Users\YthaloRossy\AppData\Roaming\npm-cache\9d73ed50-ejs.lock
+26 silly addNameRange { name: 'ejs', range: '*', hasData: false }
+27 verbose request where is /ejs
+28 verbose request registry https://registry.npmjs.org/
+29 verbose request id 80735ea88eb2cc14
+30 verbose url raw /ejs
+31 verbose url resolving [ 'https://registry.npmjs.org/', './ejs' ]
+32 verbose url resolved https://registry.npmjs.org/ejs
+33 verbose request where is https://registry.npmjs.org/ejs
+34 info trying registry request attempt 1 at 17:52:40
+35 http GET https://registry.npmjs.org/ejs
+36 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+37 verbose request where is /express
+38 verbose request registry https://registry.npmjs.org/
+39 verbose url raw /express
+40 verbose url resolving [ 'https://registry.npmjs.org/', './express' ]
+41 verbose url resolved https://registry.npmjs.org/express
+42 verbose request where is https://registry.npmjs.org/express
+43 info trying registry request attempt 1 at 17:52:40
+44 verbose etag "9SOC0UE80U2MH53O9VGCMB5NN"
+45 http GET https://registry.npmjs.org/express
+46 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+47 info trying registry request attempt 2 at 17:52:50
+48 http GET https://registry.npmjs.org/ejs
+49 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+50 info trying registry request attempt 2 at 17:52:50
+51 verbose etag "9SOC0UE80U2MH53O9VGCMB5NN"
+52 http GET https://registry.npmjs.org/express
+53 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+54 info trying registry request attempt 3 at 17:53:50
+55 http GET https://registry.npmjs.org/ejs
+56 info trying registry request attempt 3 at 17:53:50
+57 verbose etag "9SOC0UE80U2MH53O9VGCMB5NN"
+58 http GET https://registry.npmjs.org/express
+59 silly lockFile 9d73ed50-ejs ejs@*
+60 silly lockFile 9d73ed50-ejs ejs@*
+61 silly registry.get cb [ 304, undefined ]
+62 verbose etag https://registry.npmjs.org/express from cache
+63 silly lockFile fb24baa2-express-3-4-7 express@3.4.7
+64 silly lockFile fb24baa2-express-3-4-7 express@3.4.7
+65 error network getaddrinfo ENOTFOUND
+65 error network This is most likely not a problem with npm itself
+65 error network and is related to network connectivity.
+65 error network In most cases you are behind a proxy or have bad network settings.
+65 error network
+65 error network If you are behind a proxy, please make sure that the
+65 error network 'proxy' config is set properly.  See: 'npm help config'
+66 error System Windows_NT 6.2.9200
+67 error command "c:\\nodejs\\node.exe" "c:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+68 error cwd c:\nodejs\app-real-with-nodejs\ntalk
+69 error node -v v0.10.33
+70 error npm -v 1.4.28
+71 error syscall getaddrinfo
+72 error code ENOTFOUND
+73 error errno ENOTFOUND
+74 verbose exit [ 1, true ]
